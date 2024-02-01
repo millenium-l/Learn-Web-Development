@@ -8,16 +8,23 @@
 <body>
     <div>
         <!-- select element -->
-        <form>
-            <label>Name: </label>
+        <!-- form acts as a container for all attributes -->
+        <form action="./index.php" method="post">
+            <fieldset>
+                <legend>personal information</legend>
+                <label>Name: </label>
             <input type="text" />
             <br />
 
             <label>Email: </label>
             <input type="email" />
             <br />
+            </fieldset>
+            
 
-            <label for="languages">Choose your favourite language</label>
+            <fieldset>
+                <legend>Additional information</legend>
+                 <label for="languages">Choose your favourite language: </label>
             <select id="language">
             <option value="html">HTML</option>
             <option value="css">CSS</option>
@@ -25,12 +32,31 @@
 
             </select>
             <br /><br />
-           <!-- tetarea element -->
+           <!-- textarea element -->
            <label>Additional information: </label> <br />
-           <Textarea>Add some additional comments</Textarea>
-           <br />
+           <Textarea placeholder="Add some additional comments" 
+           rows="10"
+           cols="30"
+           ></Textarea>
+           <br><br />
 
-            <input type="submit"/>
+           <!-- Datalist element-->
+           <label>What is your favourite website: </label>
+           <input list="browsers">
+           <datalist id="browsers">
+            <option value="brave"></option>
+            <option value="opera"></option>
+            <option value="chrome"></option>
+            <option value="firefox"></option>
+
+
+           </datalist>
+
+           <!--button element-->
+           <input type="submit"/><br><br />
+           <button>sign up</button>
+            </fieldset>
+           
         </form>
 
         

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table</title>
+</head>
+<body>
+    <!-- tables-->
+    <!-- border to specify the lines-->
+    <table border="1">
+        <!--To define rows we use tr-->
+        <!--To define header rows we use th-->
+        <!--we can use rowspan and colspan for multiple headers-->
+        <caption>user details</caption>
+        <colgroup>
+            <col span="2"  style="background-color: aqua;" />
+        </colgroup>
+        <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>age</th>  
+         </tr>
+             <!--td to define data -->
+         <tr>
+            <td rowspan="2">nike</td>
+            <td>addidas</td>
+            <td>20</td>
+         </tr>
+
+         <tr>
+            <td>abbibas</td>
+            <td>14</td>
+         </tr>
+
+         <tr>
+            <td>mike</td>
+            <td>laddidas</td>
+            <td>17</td>
+         </tr>
+
+         <tr>
+            <td>bike</td>
+            <td>baddidas</td>
+            <td>11</td>
+         </tr>
+    </table>
+    
+</body>
+</html>
