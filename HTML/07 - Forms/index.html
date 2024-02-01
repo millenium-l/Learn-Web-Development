@@ -9,12 +9,12 @@
     <Form>
         <!-- text input -->
         <label>username:</label>
-        <input type="text" required />
+        <input type="text" required value="lee" name="username" />
         <br />
 
         <!-- email input-->
         <label>Email:</label>
-        <input type="email" required />
+        <input type="email" required placeholder="enter your email" />
         <br />
 
 
@@ -53,9 +53,29 @@
         <input type="range">
         <br />
 
-        <!--submit button-->
-        <input type="submit"/>
+        <!-- radio button -->
+        <p>select your gender</p>
+        <label for="male">male</label>
+        <input type="radio" value="male" name="gender" id="male"/>
+        <br />
+        
+        <label for="female">female</label>
+        <input type="radio" value="female" name="gender" id="female"/>
+        <br />
 
+        <!-- checkboxes -->
+        <p>How did you know about us</p>
+        <input type="checkbox" id="ads" value="ads"/>
+        <label for="ads">ads</label>
+
+        <input type="checkbox" id="a friend" value="a friend"/>
+        <label for="a friend">A friend</label>
+
+        <input type="checkbox" id="magazine" value="magazine"/>
+        <label for="magazine">Magazine</label>
+
+        <!--submit button-->
+        <input type="submit" value="sign up
         
 
     </Form>
