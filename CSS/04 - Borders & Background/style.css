@@ -1,0 +1,15 @@
+.container{
+    height: 700px;
+    width: 800px;
+    border: 2px solid blue;
+    padding: 5px;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    /*ocapacity = transparency)*/
+    opacity: 100%;
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+}
