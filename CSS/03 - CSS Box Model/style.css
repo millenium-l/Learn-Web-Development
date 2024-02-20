@@ -1,0 +1,17 @@
+/* paddding is used for spacing inside the border*/
+/* box-sizing is used for making the border remain the same*/
+/* marging is used for spacing outside the border*/
+.one{
+    border: 2px solid blue;
+    padding: 20px;
+    height: 10px;
+    width: 10px;
+    box-sizing: border-box;
+}
+
+.two{
+    border: 2px solid red;
+    padding: 20px;
+    height: 10px;
+    width: 10px;
+}
