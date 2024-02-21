@@ -1,0 +1,48 @@
+/* parent child selector*/
+div > p{
+    color: rgba(0, 0, 255);
+}
+
+/* parent grandchild selector*/
+div h4{
+    color: green;
+}
+
+/* style a link*/
+a[target]{
+    text-decoration: none;
+    color: red;
+}
+
+/*style a specific link*/
+a[target="_self"]{
+    background-color: blue;
+}
+
+/*when link is at an unvisited state*/
+a:link{
+    color: red;
+}
+
+/*when link is at a visited state*/
+a:visited{
+    color: green;
+}
+
+/*mouse over that link*/
+a:hover{
+    color: black;
+}
+
+/* selected state*/
+a:active{
+    color: purple;
+}
+
+::marker{
+    color: red;
+    font-size: 0px;  
+}
+
+
+
