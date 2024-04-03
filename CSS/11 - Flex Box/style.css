@@ -1,0 +1,53 @@
+/* flexbox can be used for row, column, reverse, row-reverse, column-reverse etc */
+/* parent element */
+.container{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;/* puts even space on the left and right */
+    align-items: flex-start;/* puts even space on the top and bottom */
+    flex-wrap: wrap; /* or nowrap*/ /* enables many div contents inside a container to fit without lying on each other */
+    align-content: space-between;  /* allows content in flex-wrap to be spaced out */
+    /* flex-flow is used to replace flex direction and wrap*/
+    flex-flow: row wrap;
+    gap: 20px; /* allows space between them */
+}
+
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(26, 40, 117);
+    border: 5px solid blue;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+.item-1{
+    flex-grow: 3; /* allows items to row if there is space */
+    flex-shrink: 2; /* allows items to shrink when the space is small */
+                    /* the one with the highest value will shrink first */
+    flex-basis: 200px; /* items are adjusted according to it's value */
+}
+
+.item-2{
+    flex-grow: 1; /* allows items to row if there is space */
+    flex-shrink: 1;
+    align-items: flex-end; /* overides the value of align items in the parent */
+}   
+
+.item-3{
+    flex-grow: 1; /* allows items to row if there is space */
+    flex-shrink: 1;
+}
+
+.item-4{
+    /* the first is for grow then shrink then basis */
+    flex: 1 2 200px;
+    order: -1; /* makes the item come first or where u want it to be */
+}

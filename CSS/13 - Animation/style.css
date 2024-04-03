@@ -1,0 +1,59 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    animation-name: colorchange;
+    animation-duration: 20s;
+    position: relative;
+    animation-delay: 3s;
+    animation-iteration-count: 5; /* how many times the animation should repead */
+    animation-direction: normal; /* starts from 0% to 100% */
+    animation-timing-function: ease; /* starts slow then fast then slow */
+    animation-fill-mode: forwards; /* the animation will stop at the color with 100% */
+    /*animation: 3s ease 2s 3 normal forwards; /* all animations for all functions */
+}
+
+/* used to define animations */
+@keyframes colorchange {
+    /*from{
+        background-color: burlywood;
+    }
+    to{
+        background-color: blue;
+    }*/
+/* we can also use percentages */
+    0%{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+
+    25%{
+        background-color: orange;
+        left: 500px;
+        top: 0px;
+        transform: rotate(90deg);
+    }
+
+    50%{
+        background-color: yellow;
+        left: 500px;
+        top: 500px;
+        transform: rotate(180deg);
+    }
+
+    75%{
+        background-color: green;
+        left: 0px;
+        top: 500px;
+        transform: rotate(270deg);
+    }
+
+    100%{
+        background-color: blue;
+        top: 250px;
+        left: 250px;
+        transform: rotate(360deg);
+    }
+}
