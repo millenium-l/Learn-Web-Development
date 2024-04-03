@@ -1,0 +1,55 @@
+/* static remains the same */
+.static{
+    position: static;
+    border: 2px solid blue;
+}
+/* relative can be changed by adding the top , bottom etc */
+.relative{
+    position: relative;
+    border: 2px solid black;
+    top: 0px;
+    left: 40px;
+    right: 15px;
+}
+/* fied position remains intact upon scrolling up */
+.fixed{
+    position: fixed;
+    border: 3px solid red;
+    top: 0px;
+    right: 0px;
+}
+/* absolute position can be anywhere */
+.outer{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid pink;
+}
+.absolute{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    height: 50px;
+    border: solid green;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    border: 2px solid yellow;
+    left: 5px;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+p{
+    color: aqua;
+    font-size: larger;
+    position: relative;
+    margin: 500px;
+    z-index: 2;
+}
