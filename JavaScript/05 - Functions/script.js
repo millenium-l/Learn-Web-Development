@@ -19,3 +19,29 @@ function sum(num1, num2) {
 
 console.log(sum(1,9));
 
+const chopmeat = (meat) => `chopped ${meat} ready for cooking`;
+console.log(chopmeat("steak"));
+
+    // EXPRESSIONS fx
+function preparetea(water, milk) {
+    return `my tea is full of ${milk} and ${water}`;
+}
+
+console.log(preparetea());
+
+    // iife fx
+(function () {
+    console.log("My immediately invoked function");
+})
+
+    // closure fx
+function chopepper(pepper) {
+    return function () {
+        return `$(pepper) is chopped`;
+    };
+}
+
+const addchillies = chopepper("green pepper");
+console.log(addchillies());
+
+
