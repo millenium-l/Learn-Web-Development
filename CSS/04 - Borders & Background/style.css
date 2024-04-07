@@ -1,15 +1,24 @@
-.container{
-    height: 700px;
-    width: 800px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#tainer{
     border: 2px solid blue;
-    padding: 5px;
-    margin: 5px;
-    border-style: solid;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
-    /*ocapacity = transparency)*/
-    opacity: 100%;
-    background-image: url('1.jpg');
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-attachment: fixed;
+    background: linear-gradient(to top, rgba(43, 123, 105, 0.5) 50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(foodiesfeed.com_burger-with-melted-cheese.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#image{
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    
+    
 }
